@@ -1,0 +1,32 @@
+
+<web-app>
+
+<servlet>
+    <description>This servlet sends file to client</description>
+    <display-name>DownloadFileServlet</display-name>
+    <servlet-name>DownloadFileServlet</servlet-name>
+    <servlet-class>CT.Download</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+    <servlet-name>DownloadFileServlet</servlet-name>
+    <url-pattern>/download</url-pattern>
+</servlet-mapping>  
+<servlet>
+
+	<description>Evaluation</description>
+    <display-name>Evaluation</display-name>
+    <servlet-name>Evaluation</servlet-name>
+    <servlet-class>CT.Graph1</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+    <servlet-name>Evaluation</servlet-name>
+    <url-pattern>/Evaluation</url-pattern>
+</servlet-mapping>  
+
+
+<welcome-file-list>
+<welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+</web-app>
